@@ -363,6 +363,12 @@ config CHARGER_MAX77849
 	  flash driver.
 	  You have to define MFD_MAX7784
 
+config MAXSM5703_CHARGE_CONTROL
+	bool "Charge control interface for Maxim77843"
+	default y
+	help
+	  Allows configuration of AC, USB and Wireless charging levels	
+
 config CHARGER_SM5703
 	tristate "SM5703 battery charger support"
 	depends on MFD_SM5703 && I2C
